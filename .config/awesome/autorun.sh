@@ -40,5 +40,5 @@ run compton --shadow-exclude '!focused'
 run blueman-applet
 run msm_notifier
 run xss-lock slock
-run nitrogen --restore &
 run udiskie
+run feh --randomize --bg-fill $HOME/Pictures/wallpaper/*
