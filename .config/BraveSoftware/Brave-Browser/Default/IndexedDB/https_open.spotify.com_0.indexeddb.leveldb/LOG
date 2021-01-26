@@ -1,7 +1,0 @@
-2021/01/26-09:26:32.761 63a9 Reusing MANIFEST /home/silvanr/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_open.spotify.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/01/26-09:26:32.761 63a9 Recovering log #3
-2021/01/26-09:26:32.790 63a9 Reusing old log /home/silvanr/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_open.spotify.com_0.indexeddb.leveldb/000003.log 
-2021/01/26-09:27:09.023 67fe Level-0 table #5: started
-2021/01/26-09:27:09.045 67fe Level-0 table #5: 431289 bytes OK
-2021/01/26-09:27:09.060 67fe Delete type=0 #3
-2021/01/26-09:27:09.060 67fe Manual compaction at level-0 from (begin) .. (end); will stop at (end)
