@@ -1,0 +1,92 @@
+{
+   "checksum": "a6bf684b6ef495803638dfc67e112911",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13250600051387501",
+            "guid": "bd6fef14-dd1a-407e-bbba-7ab62d94acdd",
+            "id": "5",
+            "name": "Arch Linux",
+            "type": "url",
+            "url": "https://www.archlinux.org/"
+         }, {
+            "children": [ {
+               "date_added": "13251146517468612",
+               "guid": "aeac3ae5-fd91-4722-b3e2-0fd55c0bf6cf",
+               "id": "7",
+               "name": "Core utilities - ArchWiki",
+               "type": "url",
+               "url": "https://wiki.archlinux.org/index.php/Core_utilities#Essentials"
+            } ],
+            "date_added": "13256056097804755",
+            "date_modified": "13256056097804756",
+            "guid": "0fce8a9a-b8c7-492c-b125-d7da4b3eaa46",
+            "id": "6",
+            "name": "Arch",
+            "type": "folder"
+         }, {
+            "date_added": "13251146894350629",
+            "guid": "8928ca65-9b79-4167-80a2-3dba65d55539",
+            "id": "8",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/?hl=de&gl=CH"
+         }, {
+            "children": [ {
+               "date_added": "13251210586353272",
+               "guid": "dfe4a182-5c7d-4a2e-b746-cddbc4fa5e5d",
+               "id": "10",
+               "name": "Bedienung — Linux und Open Source",
+               "type": "url",
+               "url": "https://www.grund-wissen.de/linux/shell/vim/bedienung.html"
+            } ],
+            "date_added": "13256056097805955",
+            "date_modified": "13256056097805955",
+            "guid": "79ba32f4-7a7f-4a6a-a3a1-8ffe14078693",
+            "id": "9",
+            "name": "vim",
+            "type": "folder"
+         }, {
+            "date_added": "13251226262917210",
+            "guid": "16a89749-ae59-4090-a2ed-1aeb0ff0049e",
+            "id": "11",
+            "name": "Unsplash",
+            "type": "url",
+            "url": "https://unsplash.com/"
+         }, {
+            "date_added": "13255610576686180",
+            "guid": "ba4f03c3-45d0-4013-9294-661e9a852d3f",
+            "id": "12",
+            "name": "GitHub",
+            "type": "url",
+            "url": "https://github.com/rueeggsilvan"
+         } ],
+         "date_added": "13256055765691629",
+         "date_modified": "13255610576686180",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13256055765691632",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13256055765691634",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CooBChAIiIECEgqApLSZ510AAAAAEgAaWHZMUWhMbkVKaUpwRk5vMVBDQi8yOXFYWTlsMEptcWtyZlhXS0dxV0k1R3NPckJFZTJpQ1h0eXhlZUFwUEFzejlUa3lYM1VqRzNqUFFYME5RdzY1allBPT0gASoYaGp6VUhjUCtrdFlwLzlVNytLL25hZz09EqIBCAoSnQEKHFYzZ2dUamp5OTYvbTFzeEZ6ZXk2YUpxZVE3bz0SJDk2OGE4NTI2LWMyY2ItNDJjOC1hMWNhLTY4ZjQ1NzgyNmJiORgAIAAoADACOPGB88fhLkDxgfPH4S5KHGQ2L1FJTFk3V1dlVEFQUUZsaFdtczcxdHJtYz1aHiIcckFvVkpLNkNHWEdVeVVuMWJtcFY4WHFaaXZFPWWt9WnKEqMBCAkSngEKHDdjQ1hpdWtrVUkzQ3I4bjRoRU5MdGhPRGVoMD0SJDhhODBjZjczLTgwMTgtNDc2MS04N2YyLWY1NWZlNmUzM2U5NBgAIAAoADABOODT88fhLkDg0/PH4S5KHEZtekhsS0o2YWpXSjBFdWp6NEdLV05oKzBlaz1aHyId90dMU2V4STBoU3A0ck1EMXd2aFRtVEo4Q2Q0TT1lAAAAABKjAQgIEp4BChxFOW9GSFBBc3pQYzQ1Z3ZRUlpPTFovQURSMU09EiQ5ZmMxYzNlNy1iNGQwLTQ1ZTAtYjY4MC02ZjVlMTFmMzc3NmMYACACKAIwAziOyMOp4S5Aksi1zvMuShx0ZlBtWVY1MG1pdEFyZ2NmdExPSXVWNG9DQzg9Wh8iHd1pakFGaFZ5Myt2WEdEdGxsODNTMXJJUTg4UjQ9ZTj9dtsSowEIDBKeAQocNG12RGNLb2ZnL0U4NkRtOTE3TVV6NEQ3cEFjPRIkZjQ1MWQzZGUtMzNjZC00MGFlLWFkMTgtYjk1MmZmZjU4MTE1GAAgAigCMAQ4ro79+fEuQJXItc7zLkocWTU5aVhqSUdhMmpGenhVUzc4Rkc4YU5WRS9vPVofIh39ZnA0VlJQUkxUbG9XWTdKdlROR1BEd2FnUENFPWUIDEouEqMBCAsSngEKHFY3dVdMME1TTVpZaTRHN1RZL0crcVYzb0VqWT0SJGIwYmY1MzczLTk3ZGMtNDg5Ni04NjIyLThjM2NlZmJiNjYyYxgAIAIoAjAEOIXrr8/hLkCUyLXO8y5KHGhLN20ySWU5OHNRcm9aZmkvLytLRTNCMXQyaz1aHyId+zJGdytKR0dnUmZtc2ZyMmVmcEYwMElyZEJjcz1lI3piQxKiAQgHEp0BChxzWkdOQzlVVko4TmI4ZzAwVW9TOHhoZ2g5VTQ9EiQzMTg0OGE4Ny1mYjNiLTRiMjAtYTE5ZC0yNGFhMDVjN2RjNGEYACAAKAAwAjjdx6yp4S5A3cesqeEuShx1blQ0anhmUGgwTUZaUlQvWW5yTlpiQS9NNjg9Wh4iHFJDZ2h2RzJlYUdjN3cxNHlzYUJJWXc2L0FBbz1lS2EKuxKjAQgGEp4BChxERGxFQVhocjl3aG52OW9sWmE2YysreFJTUUU9EiRjNjk1YmU3ZC0xMGUyLTQxM2UtYTFlYS04ZjQwMGQxODNmZWIYACAAKAAwATia662p4S5AmuutqeEuShxYa2tQNlVmNVhGU1JDMW0rc21PS2dsZDREcm89Wh8iHbpROC82WUZVNTQ4TGJGR3JQM2E3bU1CMUNQWGM9ZQAAAAASogEIBRKdAQocZ2hERTIrM3A3blJWREdITFZHUVd1azM3a1p3PRIkODg1NmQxNjctZmQ0Zi00YzUxLTllNmMtZmQwMjk3NTg3MTQxGAAgAigCMAQ4u/XipN8uQJLItc7zLkocdWVBdFZFN1dXU2lJeG0yZUhDVzYyL1RHZGtBPVoeIhwxSlJ5T2wvVlNBT1Z5VnAzbjhkcW5pM1BtOGs9ZUthCrsSgwEIARJ/ChwvRUtMYVVVeU1kYktFazFCYTJVaW55RG5mN0k9EiQzOGVlMDI0Yy1jZDllLTRhOTAtOGI3Yy1kOTQwM2Y2MDIwODkYACAAKAAwATjKz4vU3i5Ays+L1N4uShxVK0dHSXRaRURwWnNJU2xPVWFJVHVJTGRNbkk9WgBlAAAAABKDAQgDEn8KHHk1V0UyN3VJNnZYL0RlSVNISnpuak1xdVdXcz0SJGI4ZWFjMzRhLTI1ZTYtNGM0MS1hZjY2LTVjOGY2NzczYzRiNRgAIAAoADABOMrPi9TeLkDKz4vU3i5KHDc5bCtMUkVVcGlhRXZERCtHNDNjcFhTdHdCYz1aAGUAAAAAEoMBCAISfwocekRWR3JydFpMZE0rNEJUeWJnK0hDT3JXZ3lvPRIkNzM3MDM4ZWQtNWYyMi00YjFkLWFmNGMtYWY2YTgxZjIzNDU0GAAgACgAMAE4ys+L1N4uQMrPi9TeLkocNXVzeS9jcGZwaTFFdG9CSERnWElzMHFiNHJBPVoAZQAAAAAYASCf0rXO8y4=",
+   "version": 1
+}

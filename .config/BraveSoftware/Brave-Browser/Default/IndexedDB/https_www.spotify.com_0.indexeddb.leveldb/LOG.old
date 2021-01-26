@@ -1,0 +1,15 @@
+2021/01/26-09:26:02.273 67fe Reusing MANIFEST /home/silvanr/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.spotify.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/26-09:26:02.273 67fe Recovering log #7
+2021/01/26-09:26:02.273 67fe Reusing old log /home/silvanr/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.spotify.com_0.indexeddb.leveldb/000007.log 
+2021/01/26-09:26:11.348 67fe Level-0 table #12: started
+2021/01/26-09:26:11.356 67fe Level-0 table #12: 986 bytes OK
+2021/01/26-09:26:11.364 67fe Delete type=0 #7
+2021/01/26-09:26:11.364 67fe Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/01/26-09:26:11.364 67fe Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01*\x00u\x00n\x00A\x00u\x00t\x00h\x00M\x00e\x00s\x00s\x00a\x00g\x00i\x00n\x00g\x00-\x00s\x00t\x00o\x00r\x00a\x00g\x00e\x00_\x00e\x00x\x00p\x00i\x00r\x00a\x00t\x00i\x00o\x00n\x00-\x002\x004\x002\x002\x000\x006\x004' @ 151 : 1
+2021/01/26-09:26:11.364 67fe Compacting 1@1 + 1@2 files
+2021/01/26-09:26:11.371 67fe Generated table #13@1: 21 keys, 734 bytes
+2021/01/26-09:26:11.371 67fe Compacted 1@1 + 1@2 files => 734 bytes
+2021/01/26-09:26:11.379 67fe compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/01/26-09:26:11.379 67fe Delete type=2 #12
+2021/01/26-09:26:11.379 67fe Delete type=2 #9
+2021/01/26-09:26:11.379 67fe Manual compaction at level-1 from '\x00\x01\x01\x02\x01*\x00u\x00n\x00A\x00u\x00t\x00h\x00M\x00e\x00s\x00s\x00a\x00g\x00i\x00n\x00g\x00-\x00s\x00t\x00o\x00r\x00a\x00g\x00e\x00_\x00e\x00x\x00p\x00i\x00r\x00a\x00t\x00i\x00o\x00n\x00-\x002\x004\x002\x002\x000\x006\x004' @ 151 : 1 .. (end); will stop at (end)
