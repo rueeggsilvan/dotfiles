@@ -1,0 +1,24 @@
+2021/01/26-10:10:26.523 3 Reusing MANIFEST /home/silvanr/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/01/26-10:10:26.524 3 Recovering log #132
+2021/01/26-10:10:26.524 3 Reusing old log /home/silvanr/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000132.log 
+2021/01/26-10:10:43.301 5 Level-0 table #137: started
+2021/01/26-10:10:43.311 5 Level-0 table #137: 14681 bytes OK
+2021/01/26-10:10:43.320 5 Delete type=0 #132
+2021/01/26-10:14:21.181 8 Level-0 table #139: started
+2021/01/26-10:14:21.197 8 Level-0 table #139: 14516 bytes OK
+2021/01/26-10:14:21.208 8 Delete type=0 #136
+2021/01/26-10:17:21.180 b Level-0 table #141: started
+2021/01/26-10:17:21.191 b Level-0 table #141: 15959 bytes OK
+2021/01/26-10:17:21.203 b Delete type=0 #138
+2021/01/26-10:19:21.180 d Level-0 table #143: started
+2021/01/26-10:19:21.190 d Level-0 table #143: 11398 bytes OK
+2021/01/26-10:19:21.200 d Delete type=0 #140
+2021/01/26-10:19:21.200 b Compacting 4@0 + 1@1 files
+2021/01/26-10:19:21.217 b Generated table #144@0: 124 keys, 323240 bytes
+2021/01/26-10:19:21.217 b Compacted 4@0 + 1@1 files => 323240 bytes
+2021/01/26-10:19:21.225 b compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/01/26-10:19:21.226 b Delete type=2 #141
+2021/01/26-10:19:21.226 b Delete type=2 #139
+2021/01/26-10:19:21.226 b Delete type=2 #143
+2021/01/26-10:19:21.226 b Delete type=2 #134
+2021/01/26-10:19:21.226 b Delete type=2 #137
