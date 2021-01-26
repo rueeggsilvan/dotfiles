@@ -148,6 +148,7 @@ function sp
 	spt
 end
 
-function config
+# gb as alias for git and bare
+function gb
 	/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME $argv
 end
