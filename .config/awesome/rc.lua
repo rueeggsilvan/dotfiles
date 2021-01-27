@@ -375,7 +375,7 @@ local function set_wibox(s)
         opacity = 0.9,
         type = "dock",
         x = s.geometry["x"] + gap,
-        y = s.geometry["y"] + gap,
+        y = s.geometry["y"] + gap - 2,
         width = s.geometry["width"] - 3 * gap,
         height = beautiful.wibox_height,
         screen = s,
@@ -383,6 +383,9 @@ local function set_wibox(s)
         fg = beautiful.wibox_fg,
         border_width = 2,
         border_color = "#98c379",
+        shape = function(cr,w,h)
+            gears.shape.rounded_rect(cr,w,h,5)
+        end
     }
     -- Set wibox struts
     s.mywibox:struts {
@@ -763,6 +766,9 @@ client.connect_signal("manage",
             -- Prevent clients from being unreachable after screen count changes
             awful.placement.no_offscreen(c)
         end
+				c.shape = function(cr,w,h)
+        		gears.shape.rounded_rect(cr,w,h,5)
+    		end
     end
     )
 
