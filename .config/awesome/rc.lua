@@ -202,7 +202,7 @@ local mylayoutbox = function(s)
         {
             id = "layoutbox_role",
             awful.widget.layoutbox(s),
-            opacity = 0.5,
+            opacity = 1,
             layout = wibox.layout.fixed.horizontal,
         },
         top = 6,
@@ -303,7 +303,7 @@ mycpuinfo = wibox.widget {
                         cpus[name]["idle_prev"] = idle
                     end
                 end
-                widget:set_markup_silently(string.format("<span color=%q> :%3.f%%</span>", beautiful.red, cpus["cpu"]["diff_usage"]))
+                widget:set_markup_silently(string.format("<span color=%q> :%3.f%%</span>", beautiful.black_lite, cpus["cpu"]["diff_usage"]))
             end
             ),
         layout = wibox.layout.fixed.horizontal,
@@ -327,7 +327,7 @@ mymeminfo = wibox.widget {
                     end
                 end
                 mem["MemUsed"] = tonumber(mem["MemTotal"] == nil and 0 or mem["MemTotal"]) - tonumber(mem["MemAvailable"] == nil and 0 or mem["MemAvailable"])
-                widget:set_markup_silently(string.format("<span color=%q> : %3.f%%</span>", beautiful.yellow, mem["MemUsed"]/mem["MemTotal"]*100))
+                widget:set_markup_silently(string.format("<span color=%q> : %3.f%%</span>", beautiful.black_lite, mem["MemUsed"]/mem["MemTotal"]*100))
             end
             ),
         layout = wibox.layout.fixed.horizontal,
@@ -341,7 +341,7 @@ mymeminfo = wibox.widget {
 -- Clock
 mytextclock = wibox.widget {
     {
-        format = "<span color='" .. beautiful.magenta .. "'> : %a %d. %b %Y %H:%M</span>",
+        format = "<span color='" .. beautiful.black_lite .. "'> : %a %d. %b %Y %H:%M</span>",
         widget = wibox.widget.textclock,
     },
     right = 6,
@@ -492,9 +492,9 @@ globalkeys = gears.table.join(
         function() awful.spawn("rofi -show drun") end,
         {description = "open dmenu", group = "launcher"}
         ),
-		awful.key({ modkey,						}, "Tab",
+	  awful.key({ modkey,						}, "Tab",
 				function() awful.spawn("rofi -show window") end,
-				{description = "show currently running apps"}
+				{description = "switch programs", group = "launcher"}
 				),
     awful.key({ modkey,           }, "b",
         function() awful.spawn(browser) end,
@@ -549,14 +549,6 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "period",
         function() awful.tag.incnmaster(1, nil, true) end,
         {description = "increase number of master clients", group = "layout"}
-        ),
-    awful.key({ modkey,           }, "Tab",
-        function() awful.client.focus.byidx(1) end,
-        {description = "focus next client", group = "client"}
-        ),
-    awful.key({ modkey, "Shift"   }, "Tab",
-        function() awful.client.focus.byidx(-1) end,
-        {description = "focus previous client", group = "client"}
         ),
     awful.key({ modkey,           }, "j",
         function() awful.client.focus.byidx(1) end,
@@ -777,7 +769,9 @@ client.connect_signal("focus",
     function(c)
         c.skip_taskbar = false
         c.border_color = beautiful.border_focus
-        if c.class == "Brave-browser" or "Steam" then
+        if c.class == "Brave-browser" then
+        		c.opacity = 1
+        elseif c.class == "Steam" then
         		c.opacity = 1
         else
         		c.opacity = 0.95
