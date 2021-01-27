@@ -91,7 +91,7 @@ awful.layout.layouts = {
 -- {{{ Widgets
 
 -- Create the wibox
--- s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "55" })
+-- s.mywibox = awful.wibar({ opacity = 0.5})
 
 -- Launcher menu
 mymenu = awful.menu({ items = {
@@ -372,15 +372,17 @@ local function set_wibox(s)
     -- Create wibox
     s.mywibox = wibox {
         visible = true,
-        opacity = 1.0,
+        opacity = 0.9,
         type = "dock",
         x = s.geometry["x"] + gap,
         y = s.geometry["y"] + gap,
-        width = s.geometry["width"] - 2 * gap,
+        width = s.geometry["width"] - 3 * gap,
         height = beautiful.wibox_height,
         screen = s,
         bg = beautiful.wibox_bg,
         fg = beautiful.wibox_fg,
+        border_width = 2,
+        border_color = "#98c379",
     }
     -- Set wibox struts
     s.mywibox:struts {
@@ -425,26 +427,26 @@ end
 -- }}}
 --------------------------------------------------------------------------------
 -- {{{ Create environment
-local function set_wallpaper(s)
-    if beautiful.wallpaper then
-        local wallpaper = beautiful.wallpaper
+--(local function set_wallpaper(s)
+--    if beautiful.wallpaper then
+--        local wallpaper = beautiful.wallpaper
         -- If wallpaper is a function, call it with the screen
-        if type(wallpaper) == "function" then
-            wallpaper = wallpaper(s)
-        end
-        gears.wallpaper.maximized(wallpaper, s, true)
+--        if type(wallpaper) == "function" then
+--            wallpaper = wallpaper(s)
+--        end
+--        gears.wallpaper.maximized(wallpaper, s, true)
 
-				beautiful.init("~/.config/awesome/themes/onehalf-dark/theme.lua")
-				for s = 1, screen.count() do
-					gears.wallpaper.maximized(wallpaper, s, true)
-				end
-				beautiful.wallpaper = awful.util.get_configuration_dir() .. "~/pictures/wallpaper/01.png"
-		end		
-end
+--				beautiful.init("~/.config/awesome/themes/onehalf-dark/theme.lua")
+--				for s = 1, screen.count() do
+--					gears.wallpaper.maximized(wallpaper, s, true)
+--				end
+--				beautiful.wallpaper = awful.util.get_configuration_dir() .. "~/pictures/wallpaper/01.png"
+--		end		
+--end
 
 local function set_screen(s)
     -- Re/set wallpaper
-    set_wallpaper(s)
+    -- set_wallpaper(s)
     -- Re/set wibox
     set_wibox(s)
     -- Sort screens according to their position
@@ -480,9 +482,7 @@ globalkeys = gears.table.join(
         {description = "open a terminal", group = "launcher"}
         ),
     awful.key({ modkey,           }, "s",
-        function()
-            awful.spawn(steam)
-        end,
+        function() awful.spawn("steam") end,
         {description = "open steam", group = "launcher"}
         ),
     awful.key({ modkey, "Shift"   }, "Return",
@@ -716,7 +716,6 @@ awful.rules.rules = {
             buttons = clientbuttons,
             screen = awful.screen.preferred,
             placement = awful.placement.no_overlap+awful.placement.no_offscreen,
-            opacity = 0.9
         }
     },
     -- Floating clients
@@ -728,7 +727,7 @@ awful.rules.rules = {
             },
             type= {
                 "dialog"
-            }
+            },
         },
         properties = { floating = true }
     },
@@ -772,13 +771,17 @@ client.connect_signal("focus",
     function(c)
         c.skip_taskbar = false
         c.border_color = beautiful.border_focus
-        c.ooacity = 0.9
+        if c.class == "Brave-browser" or "Steam" then
+        		c.opacity = 1
+        else
+        		c.opacity = 0.95
+        end
     end
     )
 client.connect_signal("unfocus",
     function(c)
         c.skip_taskbar = true
-        c.opacity = 0.8
+        c.opacity = 0.7
         if c.floating == true then
              c.border_color = beautiful.border_floating
          else
