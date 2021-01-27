@@ -141,6 +141,19 @@ function spark -d "sparkline generator"
     '
 end
 
+### FUNCTIONS ###
+# Spark functions
+function letters
+    cat $argv | awk -vFS='' '{for(i=1;i<=NF;i++){ if($i~/[a-zA-Z]/) { w[tolower($i)]++} } }END{for(i in w) print i,w[i]}' | sort | cut -c 3- | spark | lolcat
+    printf  '%s\n' 'abcdefghijklmnopqrstuvwxyz'  ' ' | lolcat
+end
+
+function commits
+    git log --author="$argv" --format=format:%ad --date=short | uniq -c | awk '{print $1}' | spark | lolcat
+end
+
+
+# Spotify
 function sp
 	killall spotifyd
 	sleep 5
@@ -148,7 +161,12 @@ function sp
 	spt
 end
 
+### ALIAS ###
 # gb as alias for git and bare
 function gb
 	/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME $argv
 end
+
+# spark aliases
+alias clear='clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
+
