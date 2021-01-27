@@ -167,6 +167,11 @@ function gb
 	/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME $argv
 end
 
+# gsetup as alias for git and bare 
+function gsetup
+	/usr/bin/git --git-dir=$HOME/setup/ --work-tree=$HOME $argv
+end
+
 # spark aliases
 alias clear='clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
 

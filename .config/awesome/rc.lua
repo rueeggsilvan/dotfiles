@@ -63,7 +63,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Initialize theme
-beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
+beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
 
 -- Table of layouts
 awful.layout.layouts = {
@@ -118,7 +118,7 @@ mylauncher = wibox.widget {
 
 mylauncher:buttons(gears.table.join(
         awful.button({ }, 1,
-            function() awful.spawn(mydmenu_run()) end
+            function() awful.spawn("rofi -show drun") end
         ),
         awful.button({ }, 3,
             function() mymenu:toggle() end
@@ -303,7 +303,7 @@ mycpuinfo = wibox.widget {
                         cpus[name]["idle_prev"] = idle
                     end
                 end
-                widget:set_markup_silently(string.format("<span color=%q> :%3.f%%</span>", beautiful.black_lite, cpus["cpu"]["diff_usage"]))
+                widget:set_markup_silently(string.format("<span color=%q> :%3.f%%</span>", beautiful.wibox_fg, cpus["cpu"]["diff_usage"]))
             end
             ),
         layout = wibox.layout.fixed.horizontal,
@@ -327,7 +327,7 @@ mymeminfo = wibox.widget {
                     end
                 end
                 mem["MemUsed"] = tonumber(mem["MemTotal"] == nil and 0 or mem["MemTotal"]) - tonumber(mem["MemAvailable"] == nil and 0 or mem["MemAvailable"])
-                widget:set_markup_silently(string.format("<span color=%q> : %3.f%%</span>", beautiful.black_lite, mem["MemUsed"]/mem["MemTotal"]*100))
+                widget:set_markup_silently(string.format("<span color=%q> : %3.f%%</span>", beautiful.wibox_fg, mem["MemUsed"]/mem["MemTotal"]*100))
             end
             ),
         layout = wibox.layout.fixed.horizontal,
@@ -341,7 +341,7 @@ mymeminfo = wibox.widget {
 -- Clock
 mytextclock = wibox.widget {
     {
-        format = "<span color='" .. beautiful.black_lite .. "'> : %a %d. %b %Y %H:%M</span>",
+        format = "<span color='" .. beautiful.wibox_fg .. "'> : %a %d. %b %Y %H:%M</span>",
         widget = wibox.widget.textclock,
     },
     right = 6,
@@ -381,10 +381,10 @@ local function set_wibox(s)
         screen = s,
         bg = beautiful.wibox_bg,
         fg = beautiful.wibox_fg,
-        border_width = 2,
-        border_color = "#98c379",
+        border_width = beautiful.wibox_border_width,
+        border_color = beautiful.wibox_border_color,
         shape = function(cr,w,h)
-            gears.shape.rounded_rect(cr,w,h,5)
+            gears.shape.rounded_rect(cr,w,h,6)
         end
     }
     -- Set wibox struts
@@ -430,22 +430,8 @@ end
 -- }}}
 --------------------------------------------------------------------------------
 -- {{{ Create environment
---(local function set_wallpaper(s)
---    if beautiful.wallpaper then
---        local wallpaper = beautiful.wallpaper
-        -- If wallpaper is a function, call it with the screen
---        if type(wallpaper) == "function" then
---            wallpaper = wallpaper(s)
---        end
---        gears.wallpaper.maximized(wallpaper, s, true)
 
---				beautiful.init("~/.config/awesome/themes/onehalf-dark/theme.lua")
---				for s = 1, screen.count() do
---					gears.wallpaper.maximized(wallpaper, s, true)
---				end
---				beautiful.wallpaper = awful.util.get_configuration_dir() .. "~/pictures/wallpaper/01.png"
---		end		
---end
+--Wallpaper was set with feh, see feh config file.
 
 local function set_screen(s)
     -- Re/set wallpaper
@@ -759,7 +745,7 @@ client.connect_signal("manage",
             awful.placement.no_offscreen(c)
         end
 				c.shape = function(cr,w,h)
-        		gears.shape.rounded_rect(cr,w,h,5)
+        		gears.shape.rounded_rect(cr,w,h,6)
     		end
     end
     )
@@ -781,7 +767,7 @@ client.connect_signal("focus",
 client.connect_signal("unfocus",
     function(c)
         c.skip_taskbar = true
-        c.opacity = 0.7
+        c.opacity = 0.8
         if c.floating == true then
              c.border_color = beautiful.border_floating
          else
