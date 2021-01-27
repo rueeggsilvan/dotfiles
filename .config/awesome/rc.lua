@@ -58,15 +58,6 @@ browser = "brave"
 filemanager = "dolphin"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
-mydmenu_run =  function()
-    local gap = 2 * beautiful.useless_gap
-    local screen = awful.screen.focused()
-    local x_offset = " -x " .. screen.geometry["x"] + gap
-    local y_offset = " -y " .. screen.geometry["y"] + gap
-    local width = " -z " .. screen.geometry["width"] - 2 * gap
-    local height = " -h " .. beautiful.wibox_height
-    return "dmenu_run -p 'Run: '" .. x_offset .. y_offset .. width .. height
-end
 
 -- Default mod key
 modkey = "Mod4"
@@ -492,12 +483,16 @@ globalkeys = gears.table.join(
         function()
             awful.spawn(steam)
         end,
-        {description = "open a scratchpad terminal", group = "launcher"}
+        {description = "open steam", group = "launcher"}
         ),
     awful.key({ modkey, "Shift"   }, "Return",
-        function() awful.spawn(mydmenu_run()) end,
+        function() awful.spawn("rofi -show drun") end,
         {description = "open dmenu", group = "launcher"}
         ),
+		awful.key({ modkey,						}, "Tab",
+				function() awful.spawn("rofi -show window") end,
+				{description = "show currently running apps"}
+				),
     awful.key({ modkey,           }, "b",
         function() awful.spawn(browser) end,
         {description = "open a browser", group = "launcher"}

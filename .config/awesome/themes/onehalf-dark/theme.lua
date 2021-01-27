@@ -7,7 +7,6 @@
 local gears = require("gears")
 local theme_assets = require("beautiful.theme_assets")
 local gfs = require("gears.filesystem")
-
 -- }}}
 --------------------------------------------------------------------------------
 -- {{{ Variable definitions
@@ -19,13 +18,13 @@ local theme = {}
 theme.shape = gears.shape.powerline
 
 -- Colors
-theme.black = "#282c34"
-theme.red = "#e06c75"
+theme.black = "#202020"
+theme.red = "#98c379"
 theme.green = "#98c379"
-theme.yellow = "#e5c07b"
-theme.blue = "#61afef"
-theme.magenta = "#c678dd"
-theme.cyan = "#56b6c2"
+theme.yellow = "#98c379"
+theme.blue = "#98c379"
+theme.magenta = "#98c379"
+theme.cyan = "#98c379"
 theme.white = "#dcdfe4"
 theme.black_lite = "#5c6370"
 
