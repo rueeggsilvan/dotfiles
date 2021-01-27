@@ -18,7 +18,7 @@ local theme = {}
 theme.shape = gears.shape.powerline
 
 -- Colors
-theme.darkgreen = "#32442C"
+theme.darkgreen = "#334534"
 theme.grey = "#A0A0A0"
 theme.black = "#202020"
 theme.red = "#98c379"
