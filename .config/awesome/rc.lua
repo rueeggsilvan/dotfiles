@@ -63,7 +63,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Initialize theme ["yellow", "blue", "green", "onehalf-dark"]
-mytheme = "onehalf-dark"
+mytheme = "green"
 
 if mytheme == "yellow" then
 		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-yellow/theme.lua")
