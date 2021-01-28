@@ -62,8 +62,20 @@ editor_cmd = terminal .. " -e " .. editor
 -- Default mod key
 modkey = "Mod4"
 
--- Initialize theme
-beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
+-- Initialize theme ["yellow", "blue", "green", "onehalf-dark"]
+mytheme = "onehalf-dark"
+
+if mytheme == "yellow" then
+		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-yellow/theme.lua")
+elseif mytheme == "blue" then
+		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-blue/theme.lua")
+elseif mytheme == "green" then
+		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
+elseif mytheme == "onehalf-dark" then
+		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
+else
+		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
+end
 
 -- Table of layouts
 awful.layout.layouts = {
@@ -89,9 +101,6 @@ awful.layout.layouts = {
 -- }}}
 --------------------------------------------------------------------------------
 -- {{{ Widgets
-
--- Create the wibox
--- s.mywibox = awful.wibar({ opacity = 0.5})
 
 -- Launcher menu
 mymenu = awful.menu({ items = {
@@ -351,7 +360,7 @@ mytextclock = wibox.widget {
 
 -- Default separator
 myseparator = {
-    color = beautiful.wibox_separator_fg,
+    color = beautiful.wibox_seperator_fg,
     forced_width = 1,
     widget = wibox.widget.separator
 }
@@ -745,7 +754,7 @@ client.connect_signal("manage",
             awful.placement.no_offscreen(c)
         end
 				c.shape = function(cr,w,h)
-        		gears.shape.rounded_rect(cr,w,h,6)
+        		gears.shape.rounded_rect(cr,w,h,10)
     		end
     end
     )

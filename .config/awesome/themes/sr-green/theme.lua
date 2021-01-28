@@ -1,5 +1,5 @@
  -------------------------------------------------------------------------------
--- Onehalfdark theme
+-- sr-green theme
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -20,9 +20,9 @@ theme.shape = gears.shape.powerline
 -- Colors
 theme.background = "#334534" --darkgreen
 theme.border_inactive = "#A0A0A0" --grey
+theme.border_active = "#98c379" --lightgreen
 theme.window_background = "#202020" --black
 theme.foreground = "#98c379" --lightgreen
-theme.border_active = "#98c379" --lightgreen
 theme.symbol = "#DEDEDE" --lightgray
 
 -- Path of this theme config
@@ -40,7 +40,7 @@ theme.bg_normal = theme.window_background
 theme.bg_focus = theme.window_background
 theme.bg_urgent = theme.window_background
 theme.bg_minimize = theme.window_background
-theme.bg_systray = theme.window_background
+theme.bg_systray = theme.background
 
 theme.fg_normal = theme.foreground
 theme.fg_focus = theme.foreground
@@ -62,7 +62,7 @@ theme.menu_bg_normal = theme.window_background
 theme.menu_bg_focus = theme.background
 
 theme.menu_border_width = 1
-theme.menu_border_color = theme.border_focus
+theme.menu_border_color = theme.border_active
 theme.menu_height = 20
 theme.menu_width = 140
 
@@ -71,7 +71,7 @@ theme.menu_font = theme.font
 
 -- Wibox settings
 theme.wibox_fg = theme.symbol
-theme.wibox_separator_fg = theme.symbol
+theme.wibox_separator_fg = theme.background
 
 theme.wibox_bg = theme.background
 
