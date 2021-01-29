@@ -22,11 +22,11 @@ local twopane = require("layouts.twopane")
 -- Check if awesome ecountered an error during startup and fell back to another
 -- config
 if awesome.startup_errors then
-    naughty.notify({
-            preset = naughty.config.presets.critical,
-            title = "Oops, there were errors during startup!",
-            text = awesome.startup_errors
-        })
+  naughty.notify({
+  	preset = naughty.config.presets.critical,
+    title = "Oops, there were errors during startup!",
+    text = awesome.startup_errors
+  })
 end
 
 -- Handle runtime errors after startup
@@ -45,7 +45,7 @@ do
       })
       in_error = false
     end
-		)
+	)
 end
 
 -- }}}
@@ -66,36 +66,23 @@ modkey = "Mod4"
 mytheme = "green"
 
 if mytheme == "yellow" then
-		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-yellow/theme.lua")
+	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-yellow/theme.lua")
 elseif mytheme == "blue" then
-		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-blue/theme.lua")
+	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-blue/theme.lua")
 elseif mytheme == "green" then
-		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
+	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
 elseif mytheme == "onehalf-dark" then
-		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
+	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
 else
-		beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
+	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
 end
 
 -- Table of layouts
 awful.layout.layouts = {
-    -- awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    twopane,
-    -- awful.layout.suit.tile.left,
-    -- awful.layout.suit.tile.bottom,
-    -- awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    -- awful.layout.suit.fair.horizontal,
-    -- awful.layout.suit.spiral,
-    -- awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    -- awful.layout.suit.max.fullscreen,
-    -- awful.layout.suit.magnifier,
-    -- awful.layout.suit.corner.nw,
-    -- awful.layout.suit.corner.ne,
-    -- awful.layout.suit.corner.sw,
-    -- awful.layout.suit.corner.se,
+  awful.layout.suit.tile,
+  twopane,
+  awful.layout.suit.fair,
+  awful.layout.suit.max,
 }
 
 -- }}}
@@ -105,18 +92,18 @@ awful.layout.layouts = {
 -- Launcher menu
 mymenu = awful.menu({ items = {
 		{ "edit config", editor_cmd .. " " .. awesome.conffile },
-  	{ "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
-  	{ "restart", function() awesome.restart() end },
-  	{ "quit", function() awesome.quit() end }
+ 		{ "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+ 		{ "restart", function() awesome.restart() end },
+ 		{ "quit", function() awesome.quit() end }
 	}
 })
 
 -- Launcher widget
 mylauncher = wibox.widget {
 	{
-  image = beautiful.awesome_icon,
-  resize = true,
- 	widget = wibox.widget.imagebox,
+  	image = beautiful.awesome_icon,
+  	resize = true,
+ 		widget = wibox.widget.imagebox,
   },
   top = 4,
   right = 6,

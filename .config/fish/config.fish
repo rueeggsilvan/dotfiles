@@ -161,6 +161,20 @@ function sp
 	spt
 end
 
+# Update dotfiles repository
+function dotfu
+	dotf add -u
+	dotf commit -m $argv
+	dotf push origin main
+end
+
+# Update setup repository
+function setupu
+	setup add -u
+	setup commit -m $argv
+	setup push origin main
+end
+
 ### ALIAS ###
 # alias for git repo "dotfiles"
 function dotf
