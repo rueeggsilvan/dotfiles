@@ -162,9 +162,14 @@ function sp
 end
 
 ### ALIAS ###
-# gb as alias for git and bare
-function gb
+# alias for git repo "dotfiles"
+function dotf
 	/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME $argv
+end
+
+# alias for git repo "setup"
+function setup
+	/usr/bin/git --git-dir=$HOME/setup/ --work-tree=$HOME $argv
 end
 
 # gsetup as alias for git and bare 
