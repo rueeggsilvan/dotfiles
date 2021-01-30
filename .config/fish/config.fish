@@ -172,7 +172,7 @@ end
 function setupu
 	setup add -u
 	setup commit -m $argv
-	setup push origin main
+	setup push setup main
 end
 
 ### ALIAS ###
