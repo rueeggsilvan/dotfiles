@@ -198,3 +198,6 @@ alias clear='clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; ec
 function plist
 	pacman -Q | cut -f 1 -d " " | tr \n " " > Documents/setup/installed-pkgs
 end
+
+# alias for nordvpn
+alias vpn="nordvpn"
