@@ -742,6 +742,8 @@ client.connect_signal("focus",
      	c.opacity = 1
     elseif c.class == "Steam" then
     	c.opacity = 1
+		elseif c.class == "Darktable" then
+			c.opacity = 1
     else
     	c.opacity = 0.95
     end
