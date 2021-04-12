@@ -1402,6 +1402,72 @@
   <resource identifier="D050000L" checksum="(null)">
   </resource>
 
+  <resource identifier="DejaVu Math TeX Gyre" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold Oblique Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Oblique Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Semi-Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Droid Arabic Kufi" checksum="(null)">
   </resource>
 
@@ -3664,6 +3730,9 @@
   <resource identifier="Pothana2000" checksum="(null)">
   </resource>
 
+  <resource identifier="PowerlineSymbols Medium" checksum="(null)">
+  </resource>
+
   <resource identifier="Sagar Medium" checksum="(null)">
   </resource>
 
@@ -3787,6 +3856,9 @@
   <resource identifier="Standard Symbols PS" checksum="(null)">
   </resource>
 
+  <resource identifier="Symbols Nerd Font" checksum="(null)">
+  </resource>
+
   <resource identifier="TAMu_Kadambri" checksum="(null)">
   </resource>
 
@@ -3841,10 +3913,130 @@
   <resource identifier="URW Gothic Semi-Bold Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="xos4 Terminus" checksum="(null)">
+  <resource identifier="VictorMono Nerd Font" checksum="(null)">
   </resource>
 
-  <resource identifier="xos4 Terminus Bold" checksum="(null)">
+  <resource identifier="VictorMono Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Mono Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font Ultra-Light Oblique" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">

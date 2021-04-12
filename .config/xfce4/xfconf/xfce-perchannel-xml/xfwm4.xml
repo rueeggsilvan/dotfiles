@@ -11,7 +11,6 @@
       <value type="string" value="virt"/>
       <value type="string" value="doc"/>
       <value type="string" value="vis"/>
-      <value type="string" value="9"/>
     </property>
     <property name="workspace_count" type="int" value="8"/>
   </property>
