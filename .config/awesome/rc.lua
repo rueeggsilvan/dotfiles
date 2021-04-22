@@ -61,8 +61,8 @@ editor_cmd = terminal .. " -e " .. editor
 -- Default mod key
 modkey = "Mod4"
 
--- Initialize theme ["yellow", "blue", "green", "onehalf-dark"]
-mytheme = "green"
+-- Initialize theme ["blackwhite", "yellow", "blue", "green", "onehalf-dark"]
+mytheme = "blackwhite"
 
 if mytheme == "yellow" then
 	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-yellow/theme.lua")
@@ -72,6 +72,8 @@ elseif mytheme == "green" then
 	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
 elseif mytheme == "onehalf-dark" then
 	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
+elseif mytheme == "blackwhite" then
+	beautiful.init(gears.filesystem.get_configuration_dir()	.. "themes/sr-blackwhite/theme.lua")
 else
 	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
 end

@@ -152,13 +152,18 @@ function commits
     git log --author="$argv" --format=format:%ad --date=short | uniq -c | awk '{print $1}' | spark | lolcat
 end
 
-
 # Spotify
-function sp
-	killall spotifyd
-	sleep 5
-	spotifyd
-	spt
+function spt
+	if pgrep -x "spotifyd" > /dev/null
+		echo spotifyd is already running!
+		command spt
+	else
+		echo starting spotifyd...
+		spotifyd
+		echo spotifyd is running!
+		sleep 3
+		command spt
+  end
 end
 
 # Update dotfiles repository
