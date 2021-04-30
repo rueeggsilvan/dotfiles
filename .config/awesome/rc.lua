@@ -62,18 +62,10 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Initialize theme ["blackwhite", "yellow", "blue", "green", "onehalf-dark"]
-mytheme = "blackwhite"
+mytheme = "yellow"
 
-if mytheme == "yellow" then
-	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-yellow/theme.lua")
-elseif mytheme == "blue" then
-	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-blue/theme.lua")
-elseif mytheme == "green" then
-	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-green/theme.lua")
-elseif mytheme == "onehalf-dark" then
-	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
-elseif mytheme == "blackwhite" then
-	beautiful.init(gears.filesystem.get_configuration_dir()	.. "themes/sr-blackwhite/theme.lua")
+if mytheme == "blackwhite" or "yellow" or "blue" or "green" then
+	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-" .. mytheme .. "/theme.lua")
 else
 	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/onehalf-dark/theme.lua")
 end
@@ -768,9 +760,18 @@ client.connect_signal("unfocus",
 )
 
 -- }}}
+-------------------------------------------------------------------------------
+-- {{{ Background
+
+if mytheme == "blackwhite" or "yellow" or "blue" or "green" then
+	awful.spawn.with_shell("feh --randomize --bg-fill $HOME/Pictures/wallpaper/" .. mytheme .. "/*")
+else 
+	awful.spawn.with_shell("feh --randomize --bg-fill $HOME/Pictures/wallpaper/*")
+end
+
+-- }}}	
 --------------------------------------------------------------------------------
 -- {{{ Autostart applications
 
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
-
 -- }}}

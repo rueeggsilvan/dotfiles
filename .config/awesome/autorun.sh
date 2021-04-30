@@ -42,12 +42,11 @@ run msm_notifier
 run xss-lock slock
 run udiskie
 
-##	'THEME = (source $HOME/.config/awesome/rc.lua echo mytheme)
+##	THEME = (source $HOME/.config/awesome/rc.lua echo mytheme)
 ##
 ##	if THEME == "blackwhite" then
 ##		themePath = "$HOME/Pictures/wallpaper/blackwhite/*"
 ##	else
 ##		themePath = "$HOME/Pictures/wallpaper/*"
 ##	fi
-##
-run feh --randomize --bg-fill $HOME/Pictures/wallpaper/*
+
