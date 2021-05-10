@@ -62,7 +62,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Initialize theme ["blackwhite", "yellow", "blue", "green", "onehalf-dark"]
-mytheme = "yellow"
+mytheme = "blackwhite"
 
 if mytheme == "blackwhite" or "yellow" or "blue" or "green" then
 	beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/sr-" .. mytheme .. "/theme.lua")
@@ -87,7 +87,9 @@ mymenu = awful.menu({ items = {
 		{ "edit config", editor_cmd .. " " .. awesome.conffile },
 		{ "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
 		{ "restart", function() awesome.restart() end },
-		{ "quit", function() awesome.quit() end }
+		{ "quit", function() awesome.quit() end },
+		{ "shut down", function() awful.spawn("shutdown now") end },
+		{ "reboot", function() awful.spawn("reboot") end }
 		}
 })
 
@@ -731,15 +733,7 @@ client.connect_signal("focus",
 	function(c)
 		c.skip_taskbar = false
 		c.border_color = beautiful.border_focus
-		if c.class == "Brave-browser" then
-			c.opacity = 1
-		elseif c.class == "Steam" then
-			c.opacity = 1
-		elseif c.class == "Darktable" then
-			c.opacity = 1
-		elseif c.class == "Blender" then
-			c.opacity = 1
-		elseif c.class == "libreoffice-writer" then
+		if c.class == "Blender" or "Darktable" or "Steam" or "Brave-browser" or "libreoffice-writer" or "libreoffice-draw" or "libreoffice-calc" or "libreoffice-impress" then
 			c.opacity = 1
 		else    
 			c.opacity = 0.95
