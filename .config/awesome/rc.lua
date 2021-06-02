@@ -54,7 +54,7 @@ end
 -- Default applications
 terminal = "alacritty"
 browser = "brave"
-filemanager = "dolphin"
+filemanager = "nemo"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -374,9 +374,9 @@ local function set_wibox(s)
 		fg = beautiful.wibox_fg,
 		border_width = beautiful.wibox_border_width,
 		border_color = beautiful.wibox_border_color,
-		shape = function(cr,w,h)
-			gears.shape.transform(gears.shape.octogon(cr,w,h,5), gears.shape.rounded_rect(cr, w, h, 8))
-		end
+		--shape = function(cr,w,h)
+		--	gears.shape.transform(gears.shape.octogon(cr,w,h,5), gears.shape.rounded_rect(cr, w, h, 8))
+		--end
 	}
 	-- Set wibox struts
 	s.mywibox:struts {
@@ -722,16 +722,16 @@ client.connect_signal("manage",
 			-- Prevent clients from being unreachable after screen count changes
 			awful.placement.no_offscreen(c)
 		end
-		c.shape = function(cr,w,h)
-			gears.shape.transform(gears.shape.octogon(cr,w,h,5), gears.shape.rounded_rect(cr, w, h, 8))
-		end
+		--c.shape = function(cr,w,h)
+		--	gears.shape.transform(gears.shape.octogon(cr,w,h,5), gears.shape.rounded_rect(cr, w, h, 8))
+		--end
 	end
 )
 
 -- Focus signals
 client.connect_signal("focus",
 	function(c)
-		c.skip_taskbar = false
+		c.skip_taskbar = false 
 		c.border_color = beautiful.border_focus
 		if c.class == "Blender" or "Darktable" or "Steam" or "Brave-browser" or "libreoffice-writer" or "libreoffice-draw" or "libreoffice-calc" or "libreoffice-impress" then
 			c.opacity = 1

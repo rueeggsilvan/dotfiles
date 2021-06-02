@@ -2,7 +2,7 @@
 
 (tool "gimp-crop-tool")
 (paint-info "gimp-paintbrush")
-(brush "2. Hardness 050")
+(brush "Cell 02")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")

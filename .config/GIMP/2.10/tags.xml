@@ -1399,6 +1399,9 @@
   <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Classic Console" checksum="(null)">
+  </resource>
+
   <resource identifier="D050000L" checksum="(null)">
   </resource>
 
@@ -1474,19 +1477,61 @@
   <resource identifier="Droid Arabic Kufi Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Droid Arabic Naskh" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Arabic Naskh Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Droid Naskh Shift Alt" checksum="(null)">
   </resource>
 
   <resource identifier="Droid Sans" checksum="(null)">
   </resource>
 
+  <resource identifier="Droid Sans Arabic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Armenian" checksum="(null)">
+  </resource>
+
   <resource identifier="Droid Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Devanagari" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Ethiopic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Ethiopic Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Fallback" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Georgian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Hebrew" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Hebrew Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Japanese" checksum="(null)">
   </resource>
 
   <resource identifier="Droid Sans Mono" checksum="(null)">
   </resource>
 
-  <resource identifier="Droid Sans Semi-Bold" checksum="(null)">
+  <resource identifier="Droid Sans Tamil" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Tamil Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Droid Sans Thai" checksum="(null)">
   </resource>
 
   <resource identifier="Droid Serif" checksum="(null)">
@@ -1499,6 +1544,9 @@
   </resource>
 
   <resource identifier="Droid Serif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="gallant12x22 Medium" checksum="(null)">
   </resource>
 
   <resource identifier="Gargi-1.2b Medium Italic" checksum="(null)">
@@ -1769,6 +1817,9 @@
   </resource>
 
   <resource identifier="Likhan Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Luxi Mono" checksum="(null)">
   </resource>
 
   <resource identifier="malayalam" checksum="(null)">
@@ -3706,6 +3757,9 @@
   <resource identifier="Noto Traditional Nushu" checksum="(null)">
   </resource>
 
+  <resource identifier="OCR A Std" checksum="(null)">
+  </resource>
+
   <resource identifier="orya Medium" checksum="(null)">
   </resource>
 
@@ -3851,6 +3905,9 @@
   </resource>
 
   <resource identifier="Source Code Variable Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Special Elite" checksum="(null)">
   </resource>
 
   <resource identifier="Standard Symbols PS" checksum="(null)">
@@ -4037,6 +4094,12 @@
   </resource>
 
   <resource identifier="VictorMono Nerd Font Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="xos4 Terminus" checksum="(null)">
+  </resource>
+
+  <resource identifier="xos4 Terminus Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">
