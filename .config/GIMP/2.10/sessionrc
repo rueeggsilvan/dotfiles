@@ -59,7 +59,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 731)
+            (position 729)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
@@ -76,6 +76,21 @@
                 (preview-size 32)
                 (aux-info
                     (show-button-bar "true"))))))
+(session-info "toplevel"
+    (factory-entry "gimp-file-open-dialog")
+    (position 0 28)
+    (size 780 585))
+(session-info "toplevel"
+    (factory-entry "gimp-toolbox-color-dialog")
+    (position 0 26))
+(session-info "toplevel"
+    (factory-entry "gimp-file-save-dialog")
+    (position 0 28)
+    (size 780 585))
+(session-info "toplevel"
+    (factory-entry "gimp-file-export-dialog")
+    (position 0 97)
+    (size 780 585))
 
 (hide-docks no)
 (single-window-mode yes)
