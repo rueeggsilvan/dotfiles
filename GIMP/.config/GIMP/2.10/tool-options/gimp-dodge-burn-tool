@@ -1,9 +1,0 @@
-# GIMP gimp-dodge-burn-tool options
-
-(brush "Cell 02")
-(dynamics "Dynamics Off")
-(palette "Color History")
-(brush-size 108)
-(brush-spacing 0.5)
-
-# end of gimp-dodge-burn-tool options
