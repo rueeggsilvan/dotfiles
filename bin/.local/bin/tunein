@@ -1,0 +1,3 @@
+#!/bin/bash
+
+brave --app=https://tunein.com/radio/home/
