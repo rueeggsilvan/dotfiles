@@ -1,0 +1,4 @@
+
+#!/bin/bash
+
+brave --app=https://github.com/rueeggsilvan?tab=repositories

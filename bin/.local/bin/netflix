@@ -1,0 +1,4 @@
+
+#!/bin/bash
+
+brave --app=https://www.netflix.com/browse
