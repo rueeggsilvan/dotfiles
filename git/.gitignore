@@ -1,0 +1,7 @@
+# Global ignored directories and files
+.cache/
+compile_commands.json
+.python-version
+.gdb_history
+mnt/
+~*
