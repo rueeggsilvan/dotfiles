@@ -1,3 +1,18 @@
 [user]
 	email = silvanrueegg98@gmail.com
 	name = rueeggsilvan
+[core]
+	editor = nano
+	excludesfile = ~/.gitignore
+[init]
+#	templatedir = ~/.git_template
+[alias]
+  co = checkout
+  ci = commit
+  st = status -s -u -b --show-stash
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[color "status"]
+  added = cyan
+  changed = red
+  untracked = yellow
