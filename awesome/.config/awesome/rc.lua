@@ -69,7 +69,7 @@ local browser = "brave" -- default browser
 local visual_filemanager = "pacman-fm" -- default graphical fm
 local filemanager = "ranger" -- default fm
 local filemanager_cmd = terminal .. " -e " .. filemanager -- command to open the fm
-local editor = os.getenv("EDITOR") or "nano" -- default editor
+local editor = os.getenv("EDITOR") or "nvim" -- default editor
 local editor_cmd = terminal .. " -e " .. editor -- command to open the editor
 
 -- Default mod key

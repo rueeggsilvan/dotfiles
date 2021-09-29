@@ -154,6 +154,9 @@ end
 
 ### ALIAS ###
 
+# bluetooth alias
+alias bt="bluetoothctl"
+
 # spark aliases
 alias clear='command clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
 

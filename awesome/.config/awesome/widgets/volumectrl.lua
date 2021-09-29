@@ -17,8 +17,8 @@ local M = {}
 -- Volume control {{{1
 
 local volumecfg = {
-  cardid = 2,
-  channel = "Speaker",
+  cardid = 0,
+  channel = "Master",
 }
 
 function M.get_widget()

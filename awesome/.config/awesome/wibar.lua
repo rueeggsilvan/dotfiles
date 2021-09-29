@@ -53,6 +53,7 @@ function M.set(s)
   s.mytasklist = require("widgets.tasklist").get_widget(s)
   -- Create non-specific widgets
   local spacer = require("widgets.spacer").get_widget()
+  local network = require("widgets.network").get_widget()
   local cpuinfo = require("widgets.cpuinfo").get_widget()
   local meminfo = require("widgets.meminfo").get_widget()
   local volumectrl = require("widgets.volumectrl").get_widget()
@@ -80,6 +81,7 @@ function M.set(s)
     { -- Right widgets
       {
         {
+	  network,
           cpuinfo,
           meminfo,
           volumectrl,
