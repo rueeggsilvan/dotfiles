@@ -134,9 +134,9 @@ awful.keyboard.append_global_keybindings({
     group = "launcher",
   }),
   awful.key({ modkey }, "s", function()
-    awful.spawn(terminal)
+    awful.spawn("spotify &")
   end, {
-    description = "open a scratchpad terminal",
+    description = "open spotify",
     group = "launcher",
   }),
   awful.key({ modkey, "Shift" }, "Return", function()

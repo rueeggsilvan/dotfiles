@@ -1,3 +1,2 @@
-configuration {
-	theme: "~/.config/rofi/themes/sr-center.rasi";
-}
+
+@theme "~/.config/rofi/themes/sr-center.rasi"
